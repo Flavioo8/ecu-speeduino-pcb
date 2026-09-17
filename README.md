@@ -1,20 +1,20 @@
 # ecu-speeduino-pcb
 
-PCB de una ECU (unidad de control de motor) basada en el proyecto de código abierto [Speeduino](https://github.com/speeduino/speeduino), diseñada en Proteus sobre un Arduino MEGA. La placa se fabricó y se probó en un motor Chevrolet 1.6L.
+PCB for an ECU (engine control unit) based on the open-source [Speeduino](https://github.com/speeduino/speeduino) project, designed in Proteus around an Arduino MEGA. The board was manufactured and tested on a Chevrolet 1.6L engine.
 
-## Por qué la hice
-Para afianzar cómo una ECU gestiona un motor (lectura de sensores, control de inyección y encendido) y entender la electrónica que hay detrás.
+## Why I built it
+To strengthen my understanding of how an ECU manages an engine (sensor reading, fuel injection and ignition control) and to learn the electronics behind it.
 
-## Qué aprendí en 18 revisiones
-No todo lo que se diseña se puede construir así de fácil:
-- **Ancho de pistas:** ajustado a lo que permitía la máquina láser donde se fabricó la PCB.
-- **Ruteo:** solo sirve el tipo de ruteo que realmente se puede fabricar.
-- **Ubicación de componentes:** posicionar bien cada elemento cambia todo el diseño.
+## What I learned across 18 revisions
+Not everything that can be designed can be built that easily:
+- **Trace width:** adjusted to the limits of the laser machine used to manufacture the PCB.
+- **Routing:** only routing that can actually be manufactured is useful.
+- **Component placement:** placing each component correctly changes the whole design.
 
-## Contenido
-- `proteus/revisiones/`: revisiones 1 a 18.1 del esquema y la PCB (`revNN_` indica el orden).
-- `proteus/esquematicos/` y `proteus/simulaciones/`: esquemáticos base y simulaciones del control de inyector y bobina.
-- `gerber/`: archivos CADCAM de las versiones 14 y 18.1. `pcb-pdf/`: capas TOP, BOTTOM y SILK.
-- `bom/`: lista de componentes reales. `docs/`: conexiones mínimas necesarias (pines).
+## Contents
+- `proteus/revisiones/`: revisions 1 to 18.1 of the schematic and PCB (`revNN_` shows the order).
+- `proteus/esquematicos/` and `proteus/simulaciones/`: base schematics and injector/ignition coil control simulations.
+- `gerber/`: CADCAM files for versions 14 and 18.1. `pcb-pdf/`: TOP, BOTTOM and SILK layers.
+- `bom/`: bill of materials with the actual components. `docs/`: minimum required connections (pinout).
 
-El firmware no está incluido: la placa usa Speeduino sin modificaciones, disponible en su repositorio oficial.
+Firmware is not included: the board runs unmodified Speeduino, available in its official repository.
