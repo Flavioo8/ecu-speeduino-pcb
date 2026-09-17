@@ -1,0 +1,12 @@
+# Temporales de Proteus
+*.workspace
+*.log
+*.DO
+*.EDF
+*.sts
+Project Backups/
+# Firmware (no se publica)
+*.hex
+*.ino
+*.ini
+~$*
